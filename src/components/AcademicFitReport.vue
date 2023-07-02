@@ -65,7 +65,7 @@
           </tr>
         </thead>
         <tbody>
-          <ReportCard v-for="report in athlete.report" :key="report.school" :report="report"/>
+          <ReportData v-for="report in athlete.report" :key="report.school" :report="report"/>
         </tbody>
       </table>
     </div>
@@ -73,7 +73,7 @@
 </template>
 
 <script>
-import ReportCard from './ReportCard.vue'
+import ReportData from './ReportData.vue'
 export default {
   name: "AcademicFitReport",
   props: {
@@ -83,7 +83,7 @@ export default {
     }
   },
   components: {
-    ReportCard
+    ReportData
   }
 };
 </script>
