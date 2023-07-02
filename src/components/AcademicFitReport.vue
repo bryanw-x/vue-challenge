@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="fit-report-header">
+    <div class="report-header">
       <table>
         <thead>
           <tr>
@@ -120,6 +120,16 @@ export default {
 }
 .data label {
   font-weight: bold;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
 }
 
 </style>
