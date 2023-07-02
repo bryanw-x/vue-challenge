@@ -1,5 +1,5 @@
 <template>
-  <tr>
+  <tr :class="{ 'light-blue-row': applyBlueRow }">
     <td>{{ report.school }}</td>
     <td>{{ report.division }}</td>
     <td>{{ report.conference }}</td>
@@ -27,6 +27,10 @@ export default {
     report: {
       type: Object,
       required: true,
+    },
+    index: {
+      type: Number,
+      required: true
     }
   },
   computed: {
@@ -38,7 +42,15 @@ export default {
     },
     getActScore(){
       return `${this.report.act.min} - ${this.report.act.max}`
+    },
+    applyBlueRow() {
+      return this.index % 2 === 1;
     }
   }
 };
 </script>
+<style scoped>
+.light-blue-row {
+  background-color: #e6f2ff;
+}
+</style>

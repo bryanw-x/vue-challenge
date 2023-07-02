@@ -65,7 +65,7 @@
           </tr>
         </thead>
         <tbody>
-          <ReportData v-for="report in athlete.report" :key="report.school" :report="report"/>
+          <ReportData v-for="(report, index) in athlete.report" :key="report.school" :report="report" :index="index"/>
         </tbody>
       </table>
       <tfoot>
