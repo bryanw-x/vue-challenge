@@ -53,4 +53,9 @@ export default {
 .light-blue-row {
   background-color: #e6f2ff;
 }
+td {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
 </style>
