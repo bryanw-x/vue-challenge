@@ -15,6 +15,9 @@
     <td>{{ report.sat.math.max }}</td>
     <td>{{ report.act.min }}</td>
     <td>{{ report.act.max }}</td>
+    <td>{{ getSatReadScore }}</td>
+    <td>{{ getSatMathScore }}</td>
+    <td>{{ getActScore }}</td>
   </tr>
 </template>
 
@@ -25,6 +28,17 @@ export default {
     report: {
       type: Object,
       required: true,
+    }
+  },
+  computed: {
+    getSatReadScore() {
+      return `${this.report.sat.reading.min} - ${this.report.sat.reading.max}`
+    },
+    getSatMathScore(){
+      return `${this.report.sat.math.min} - ${this.report.sat.math.max}`
+    },
+    getActScore(){
+      return `${this.report.act.min} - ${this.report.act.max}`
     }
   }
 };
