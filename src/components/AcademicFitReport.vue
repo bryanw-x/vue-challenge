@@ -54,18 +54,26 @@
             <th>Athletic Div</th>
             <th>Conference</th>
             <th>Ranking*<br>(DI NCAA)<br>(DII & DIII Hero Sports)</th>
-            <th>GPA**<br>(Min 25% 50% 75% Max)</th>
-            <th>SAT Reding***<br>25%-75%</th>
+            <th>Min</th>
+            <th>25%</th>
+            <th>50%</th>
+            <th>75%</th>
+            <th>Max</th>
+            <th>SAT Reading***<br>25%-75%</th>
             <th>SAT Math***<br>25%-75%</th>
             <th>ACT Composite***<br>25%-75%</th>
           </tr>
         </thead>
+        <tbody>
+          <ReportCard v-for="report in athlete.report" :key="report.school" :report="report"/>
+        </tbody>
       </table>
     </div>
   </div>
 </template>
 
 <script>
+import ReportCard from './ReportCard.vue'
 export default {
   name: "AcademicFitReport",
   props: {
@@ -73,6 +81,9 @@ export default {
       type: Object,
       required: false
     }
+  },
+  components: {
+    ReportCard
   }
 };
 </script>
@@ -96,7 +107,7 @@ export default {
   align-items: flex-end;
 }
 .logo img {
-  height: 40px;
+  height: 58px;
   width: auto;
 }
 .logo-text p {

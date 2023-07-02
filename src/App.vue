@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <AcademicFitReport :athlete="athlete_info"/>
+    <AcademicFitReport :athlete="athlete_info" :report="athlete_info.report"/>
   </div>
 </template>
 
