@@ -1,6 +1,14 @@
 <template>
   <div class="container">
     <div class="header"></div>
+      <div class="athlete-avatar-name">
+        <input
+          type="text"
+          class="athlete-name"
+          v-model="athleteName"
+          @blur="updateProfileAvatar"
+        >
+      </div>
       <div class="athlete-info">
         <div class="avatar-container">
           <img class="profile-picture" v-if="!useProfileAvatar" :src="athlete.profile_image" alt="Profile Picture" />
@@ -8,15 +16,7 @@
             {{initials}}
           </div>
         </div>
-        <div class="athlete-avatar-name">
-          <input
-            type="text"
-            class="athlete-name"
-            v-model="athleteName"
-            @blur="updateProfileAvatar"
-          >
-        </div>
-        <div class="data">
+        <div class="sport-column data">
           <ul>
             <li>
               <label>Sport:</label>
@@ -32,7 +32,7 @@
             </li>
           </ul>
         </div>
-        <div class="data">
+        <div class="school-column data">
           <ul>
             <li>
               <label>High School:</label>
@@ -190,6 +190,7 @@ computed: {
   border: none;
   background-color: transparent;
   outline: none;
+  margin-left: 10px;
 }
 .logo-section {
   display: flex;
@@ -209,7 +210,7 @@ computed: {
   margin-top: 1em;
 }
 .athlete-name {
-  font-size: 15px
+  font-size: 20px
 }
 .data {
   flex: 5;
