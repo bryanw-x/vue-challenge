@@ -1,9 +1,8 @@
 <template>
   <div class="container">
-    <div class="header">
+    <div class="header"></div>
+    <div class="athlete-info">
       <h1 class="athlete-name">{{athlete.name}}</h1>
-    </div>
-    <div class="student-info">
       <img class="profile-picture" :src="athlete.profile_image" alt="Profile Picture"/>
       <div class="data">
         <ul>
@@ -47,27 +46,29 @@
       </div>
     </div>
     <div class="report-header">
-      <table>
-        <thead>
-          <tr>
-            <th>School Name</th>
-            <th>Athletic Div</th>
-            <th>Conference</th>
-            <th>Ranking*<br>(DI NCAA)<br>(DII & DIII Hero Sports)</th>
-            <th>Min</th>
-            <th>25%</th>
-            <th>50%</th>
-            <th>75%</th>
-            <th>Max</th>
-            <th>SAT Reading***<br>25%-75%</th>
-            <th>SAT Math***<br>25%-75%</th>
-            <th>ACT Composite***<br>25%-75%</th>
-          </tr>
-        </thead>
-        <tbody>
-          <ReportData v-for="(report, index) in athlete.report" :key="report.school" :report="report" :index="index"/>
-        </tbody>
-      </table>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th class="school-name">School Name</th>
+              <th>Athletic Div</th>
+              <th>Conference</th>
+              <th>Ranking*<br>(DI NCAA)<br>(DII & DIII Hero Sports)</th>
+              <th>Min</th>
+              <th>25%</th>
+              <th>50%</th>
+              <th>75%</th>
+              <th>Max</th>
+              <th>SAT Reading***<br>25%-75%</th>
+              <th>SAT Math***<br>25%-75%</th>
+              <th>ACT Composite***<br>25%-75%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ReportData v-for="(report, index) in athlete.report" :key="report.school" :report="report" :index="index"/>
+          </tbody>
+        </table>
+      </div>
       <tfoot>
         <tr>
           <td colspan="12" class="footer">
@@ -124,16 +125,19 @@ export default {
   align-items: flex-end;
 }
 .logo img {
-  height: 40%;
+  height: 4em;
   width: auto;
 }
 .logo-text p {
   text-align: right;
 }
-.student-info {
+.athlete-info {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   margin-top: 1em;
+}
+.athlete-name {
+  font-size: 15px
 }
 .data {
   flex: 5;
@@ -153,11 +157,19 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+.table-wrapper {
+  overflow-x: auto;
+}
 th {
   background-color: black;
   color: white;
   text-align: center;
   font-size: 0.8em;
+}
+th.school-name {
+  position: sticky;
+  left: 0;
+  z-index: 1;
 }
 .footer {
   border-bottom: 8px solid #0099cc;
@@ -167,5 +179,14 @@ th {
   bottom: 0;
   left: 0;
 }
-
+@media (max-width: 600px) {
+  .athlete-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .data {
+    width: 100%;
+  }
+}
 </style>
