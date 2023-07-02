@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div class="header">
-      <i class="profile-picture">profile_image</i>
-      <h2 class="athlete-name">{{athlete.name}}</h2>
+      <h1 class="athlete-name">{{athlete.name}}</h1>
     </div>
     <div class="student-info">
+      <img class="profile-picture" :src="athlete.profile_image" alt="Profile Picture"/>
       <div class="data">
         <ul>
           <li>
@@ -40,9 +40,9 @@
       <div class="logo-section">
         <div class="logo">
           <img :src="require('@/assets/Asset_1.png')" alt="Logo Image">
-        </div>
-        <div class="logo-text">
-          <p>Academic Fit Report</p>
+          <div class="logo-text">
+            <p>Academic Fit Report</p>
+          </div>
         </div>
       </div>
     </div>
@@ -68,6 +68,16 @@
           <ReportData v-for="report in athlete.report" :key="report.school" :report="report"/>
         </tbody>
       </table>
+      <tfoot>
+        <tr>
+          <td colspan="12" class="footer">
+            <p>Rankings for Division I schools based on NCAA data (www.ncaa.com) and rankings for Division II & III schools are based on data from Hero Sports (www.herosports.com/rankings)<br>
+            ** GPA is based on SportsRecruits members who have shown interest in (favorited) the school and have provided their GPA on their profile<br>
+            *** SAT and ACT scores based on national data provided by the National Center of Education Statistics - https://nces.ed.gov/ipeds/
+          </p>
+          </td>
+        </tr>
+      </tfoot>
     </div>
   </div>
 </template>
@@ -89,7 +99,7 @@ export default {
 </script>
 <style scoped>
 .container {
-  border-top: 4px solid #0099cc;
+  border-top: 8px solid #0099cc;
   font-family: 'Arial', sans-serif;
   padding: 1em;
 }
@@ -98,8 +108,15 @@ export default {
   color: #0099cc;
 }
 .profile-picture {
-  font-size: 18px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   margin-right: 10px;
+}
+.athlete-name{
+  font-size: 20px;
+  color: #0099cc;
 }
 .logo-section {
   display: flex;
@@ -107,7 +124,7 @@ export default {
   align-items: flex-end;
 }
 .logo img {
-  height: 58px;
+  height: 40%;
   width: auto;
 }
 .logo-text p {
@@ -141,6 +158,14 @@ th {
   color: white;
   text-align: center;
   font-size: 0.8em;
+}
+.footer {
+  border-bottom: 8px solid #0099cc;
+  font-size: 0.8em;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 </style>
