@@ -1,51 +1,51 @@
 <template>
   <div class="container">
-    <div class="header">
-      <i class="profile-picture">profile_image</i>
-      <h2 class="athlete-name">{{athlete.name}}</h2>
-    </div>
-    <div class="logo-section">
-      <div class="logo">
-        <img :src="require('@/assets/Asset_1.png')" alt="Logo Image">
-      </div>
-      <div class="logo-text">
-        <p>Academic Fit Report</p>
-      </div>
-    </div>
-    <div class="student-info">
-      <div class="data">
-        <ul>
-          <li>
-            <label>Sport:</label>
-            {{athlete.sport}}
-          </li>
-          <li>
-            <label>Class:</label>
-            {{athlete.grad_year}}
-          </li>
-          <li>
-            <label>Club:</label>
-            {{athlete.club.name}}
-          </li>
-        </ul>
-      </div>
-      <div class="data">
-        <ul>
-          <li>
-            <label>High School:</label>
-            {{athlete.high_school.name}}
-          </li>
-          <li>
-            <label>GPA:</label>
-            {{athlete.gpa}}
-          </li>
-          <li>
-            <label>Desired Major:</label>
-            {{athlete.major}}
-          </li>
-        </ul>
-      </div>
-    </div>
+        <div class="header">
+          <i class="profile-picture">profile_image</i>
+          <h2 class="athlete-name">{{athlete.name}}</h2>
+        </div>
+        <div class="student-info">
+          <div class="data">
+            <ul>
+              <li>
+                <label>Sport:</label>
+                {{athlete.sport}}
+              </li>
+              <li>
+                <label>Class:</label>
+                {{athlete.grad_year}}
+              </li>
+              <li>
+                <label>Club:</label>
+                {{athlete.club.name}}
+              </li>
+            </ul>
+          </div>
+          <div class="data">
+            <ul>
+              <li>
+                <label>High School:</label>
+                {{athlete.high_school.name}}
+              </li>
+              <li>
+                <label>GPA:</label>
+                {{athlete.gpa}}
+              </li>
+              <li>
+                <label>Desired Major:</label>
+                {{athlete.major}}
+              </li>
+            </ul>
+          </div>
+          <div class="logo-section">
+            <div class="logo">
+              <img :src="require('@/assets/Asset_1.png')" alt="Logo Image">
+            </div>
+            <div class="logo-text">
+              <p>Academic Fit Report</p>
+            </div>
+          </div>
+        </div>
   </div>
 </template>
 
@@ -67,7 +67,6 @@ export default {
   padding: 1em;
 }
 .header {
-  display: flex;
   align-items: center;
   color: #0099cc;
 }
