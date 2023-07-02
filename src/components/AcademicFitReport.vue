@@ -87,14 +87,64 @@
 import ReportData from './ReportData.vue'
 export default {
   name: "AcademicFitReport",
+  components: {
+    ReportData
+  },
+  data() {
+    return {
+      athleteName: this.athlete.name,
+      useProfileAvatar: !this.athlete.profile_image,
+    }
+  },
   props: {
     athlete: {
       type: Object,
-      required: false
+      required: true
     }
   },
   components: {
     ReportData
+  watch: {
+    athlete: {
+      handler(newValue) {
+        this.athleteName = newValue.name;
+        this.useProfileAvatar = !newValue.profile_image;
+      },
+    deep: true,
+  },
+  athleteName(newName) {
+    this.useProfileAvatar = true;
+    this.$emit('name-changed', newName);
+  }
+},
+computed: {
+  initials() {
+    let names = this.athleteName.split(' ');
+    return names[0].substring(0, 1).toUpperCase() + names[names.length - 1].substring(0, 1).toUpperCase();
+  },
+  avatarColor() {
+    const colors = ['#f1603c', '#6082fa', '#827cb8', '#0097a4', '#ffe066', '#ffa94d'];
+    let lastName = this.athleteName.split(' ').pop();
+    let index = lastName.charCodeAt(0) % colors.length;
+    return colors[index];
+  },
+},
+  methods: {
+    getInitials() {
+      let names = this.athleteName.split(' ');
+      let initials = names[0].substring(0, 1).toUpperCase() + names[names.length - 1].substring(0, 1).toUpperCase();
+      return initials;
+    },
+    getColor() {
+      let colors = ['#f1603c', '#6082fa', '#827cb8', '#0097a4', '#ffe066', '#ffa94d'];
+      let lastName = this.athleteName.split(' ').pop();
+      let index = lastName.charCodeAt(0) % colors.length;
+      return colors[index];
+    },
+    updateProfileAvatar() {
+      this.useProfileAvatar = true;
+      this.useProfileAvatar = this.athleteName !== this.athlete.name;
+    }
   }
 };
 </script>
