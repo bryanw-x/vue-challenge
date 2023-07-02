@@ -1,0 +1,401 @@
+{
+  "data": [
+    {
+      "name": "Maria Carter",
+      "sport": "Volleyball",
+      "grad_year": 2019,
+      "birthday": "2002-12-12",
+      "email": "maria.carter@sportsrecruits.com",
+      "url": "maria_carter",
+      "club": {
+        "name": "Valley Volleyball"
+      },
+      "high_school": {
+        "name": "Bayside High School"
+      },
+      "gpa": 3.8,
+      "major": "Nursing",
+      "profile_image": "https://s3.amazonaws.com/sr-application-demo/images/lacrosserecruits/2017/5/447_20476_252_20476_high-school-girls-lacrosse-player-8732457.jpg",
+      "report": [
+        {
+          "school": "California State University, Northridge",
+          "division": "III",
+          "conference": "Big West Conference",
+          "ranking": 151,
+          "gpa": {
+            "min": 2.7,
+            "25%": 3.28,
+            "50%": 3.52,
+            "75%": 3.8,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 400,
+              "max": 510
+            },
+            "math": {
+              "min": 400,
+              "max": 530
+            }
+          },
+          "act": {
+            "min": 16,
+            "max": 22
+          }
+        },
+        {
+          "school": "California State University, Bakersfield",
+          "division": "I",
+          "conference": "Western Athletic Conference",
+          "ranking": 160,
+          "gpa": {
+            "min": 2.0,
+            "25%": 3.39,
+            "50%": 3.6,
+            "75%": 3.88,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 390,
+              "max": 500
+            },
+            "math": {
+              "min": 400,
+              "max": 520
+            }
+          },
+          "act": {
+            "min": 15,
+            "max": 22
+          }
+        },
+        {
+          "school": "Washington and Jefferson College",
+          "division": "I",
+          "conference": "President's Athletic Conference (PAC)",
+          "ranking": 12,
+          "gpa": {
+            "min": 2.2,
+            "25%": 3.3,
+            "50%": 3.6,
+            "75%": 3.9,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": "N/A",
+              "max": "N/A"
+            },
+            "math": {
+              "min": "N/A",
+              "max": "N/A"
+            }
+          },
+          "act": {
+            "min": "N/A",
+            "max": "N/A"
+          }
+        },
+        {
+          "school": "California State University, Sacramento",
+          "division": "I",
+          "conference": "Big Sky Conference",
+          "ranking": 112,
+          "gpa": {
+            "min": 2.7,
+            "25%": 3.49,
+            "50%": 3.63,
+            "75%": 3.92,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 410,
+              "max": 520
+            },
+            "math": {
+              "min": 430,
+              "max": 540
+            }
+          },
+          "act": {
+            "min": 17,
+            "max": 22
+          }
+        },
+        {
+          "school": "California State University, Fullerton",
+          "division": "I",
+          "conference": "Big West Conference",
+          "ranking": 288,
+          "gpa": {
+            "min": 2.6,
+            "25%": 3.5,
+            "50%": 3.71,
+            "75%": 3.94,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 450,
+              "max": 550
+            },
+            "math": {
+              "min": 470,
+              "max": 580
+            }
+          },
+          "act": {
+            "min": 19,
+            "max": 24
+          }
+        },
+        {
+          "school": "Boise State University",
+          "division": "I",
+          "conference": "Mountain West Conference",
+          "ranking": 32,
+          "gpa": {
+            "min": 2.75,
+            "25%": 3.45,
+            "50%": 3.74,
+            "75%": 4.0,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 460,
+              "max": 570
+            },
+            "math": {
+              "min": 460,
+              "max": 580
+            }
+          },
+          "act": {
+            "min": 20,
+            "max": 26
+          }
+        },
+        {
+          "school": "Azusa Pacific University",
+          "division": "II",
+          "conference": "Pacific West Conference",
+          "ranking": 88,
+          "gpa": {
+            "min": 2.8,
+            "25%": 3.5,
+            "50%": 3.75,
+            "75%": 3.94,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 490,
+              "max": 600
+            },
+            "math": {
+              "min": 490,
+              "max": 610
+            }
+          },
+          "act": {
+            "min": 21,
+            "max": 27
+          }
+        },
+        {
+          "school": "California Lutheran University",
+          "division": "III",
+          "conference": "Southern California Intercollegiate Athletic Con",
+          "ranking": 2,
+          "gpa": {
+            "min": 2.9,
+            "25%": 3.63,
+            "50%": 3.8,
+            "75%": 4.0,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 500,
+              "max": 590
+            },
+            "math": {
+              "min": 510,
+              "max": 613
+            }
+          },
+          "act": {
+            "min": 22,
+            "max": 26
+          }
+        },
+        {
+          "school": "California State University, Fresno",
+          "division": "I",
+          "conference": "Mountain West Conference",
+          "ranking": 128,
+          "gpa": {
+            "min": 2.46,
+            "25%": 3.4,
+            "50%": 3.8,
+            "75%": 3.94,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 400,
+              "max": 510
+            },
+            "math": {
+              "min": 410,
+              "max": 530
+            }
+          },
+          "act": {
+            "min": 16,
+            "max": 22
+          }
+        },
+        {
+          "school": "UC Santa Barbara",
+          "division": "I",
+          "conference": "Big West Conference",
+          "ranking": 71,
+          "gpa": {
+            "min": 2.4,
+            "25%": 3.5,
+            "50%": 3.8,
+            "75%": 4.0,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 440,
+              "max": 550
+            },
+            "math": {
+              "min": 460,
+              "max": 590
+            }
+          },
+          "act": {
+            "min": 18,
+            "max": 24
+          }
+        },
+        {
+          "school": "University of Pittsburgh",
+          "division": "III",
+          "conference": "Atlantic Coast Conference (ACC)",
+          "ranking": 39,
+          "gpa": {
+            "min": 2.7,
+            "25%": 3.53,
+            "50%": 3.82,
+            "75%": 4.0,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 570,
+              "max": 660
+            },
+            "math": {
+              "min": 600,
+              "max": 680
+            }
+          },
+          "act": {
+            "min": 26,
+            "max": 30
+          }
+        },
+        {
+          "school": "UCLA",
+          "division": "I",
+          "conference": "PAC-12 Conference",
+          "ranking": 12,
+          "gpa": {
+            "min": 2.6,
+            "25%": 3.58,
+            "50%": 3.82,
+            "75%": 4.0,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 560,
+              "max": 680
+            },
+            "math": {
+              "min": 600,
+              "max": 760
+            }
+          },
+          "act": {
+            "min": 25,
+            "max": 31
+          }
+        },
+        {
+          "school": "Penn State",
+          "division": "I",
+          "conference": "Big 10",
+          "ranking": 26,
+          "gpa": {
+            "min": 2.0,
+            "25%": 3.56,
+            "50%": 3.86,
+            "75%": 4.0,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 530,
+              "max": 630
+            },
+            "math": {
+              "min": 560,
+              "max": 670
+            }
+          },
+          "act": {
+            "min": 25,
+            "max": 29
+          }
+        },
+        {
+          "school": "Stanford University",
+          "division": "I",
+          "conference": "PAC-12 Conference",
+          "ranking": 11,
+          "gpa": {
+            "min": 2.6,
+            "25%": 3.7,
+            "50%": 3.96,
+            "75%": 4.0,
+            "max": 4.0
+          },
+          "sat": {
+            "reading": {
+              "min": 600,
+              "max": 780
+            },
+            "math": {
+              "min": 700,
+              "max": 790
+            }
+          },
+          "act": {
+            "min": 31,
+            "max": 34
+          }
+        }
+      ]
+    }
+  ]
+}
