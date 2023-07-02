@@ -6,15 +6,9 @@
     <td>{{ report.ranking }}</td>
     <td>{{ report.gpa.min }}</td>
     <td>{{ report.gpa['25%'] }}</td>
-    <td>{{ report.gpa['50%'] }}</td>
-    <td>{{ report.gpa['75%'] }}</td>
+    <GPAColorCode :gpa="report.gpa['50%']" />
+    <td>{{ report.gpa['75%']  }}</td>
     <td>{{ report.gpa.max }}</td>
-    <td>{{ report.sat.reading.min }}</td>
-    <td>{{ report.sat.reading.max }}</td>
-    <td>{{ report.sat.math.min }}</td>
-    <td>{{ report.sat.math.max }}</td>
-    <td>{{ report.act.min }}</td>
-    <td>{{ report.act.max }}</td>
     <td>{{ getSatReadScore }}</td>
     <td>{{ getSatMathScore }}</td>
     <td>{{ getActScore }}</td>
@@ -22,8 +16,13 @@
 </template>
 
 <script>
+import GPAColorCode from './GPAColorCode.vue';
 
 export default {
+  name: "ReportData",
+  components: {
+    GPAColorCode
+  },
   props: {
     report: {
       type: Object,
