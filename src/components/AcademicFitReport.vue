@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :style="{ borderTop: '8px solid #009ccc' }">
     <div class="header"></div>
       <div class="athlete-avatar-name">
         <input

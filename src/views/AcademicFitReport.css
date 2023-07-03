@@ -1,35 +1,39 @@
 .container {
-  border-top: 8px solid #0099cc;
   font-family: 'Arial', sans-serif;
   padding: 1em;
 }
 .header {
   align-items: center;
-  color: #0099cc;
+}
+.avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .avatar {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 3em;
+  height: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 2em;
+  margin-right: 10px;
 }
 .profile-picture {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
+  width: 6em;
+  height: 6em;
   margin-right: 10px;
+  object-fit: cover;
 }
 .athlete-name{
-  color: #0099cc;
+  color: #009ccc;
   border: none;
   background-color: transparent;
   outline: none;
-  margin-left: 10px;
+  margin-left: 5em;
 }
 .logo-section {
   display: flex;
@@ -52,7 +56,7 @@
 }
 .athlete-name {
   font-size: 20px;
-  margin-left: 125px;
+  margin-left: 100px;
 }
 .data {
   width: 15%;
@@ -88,10 +92,11 @@ th.school-name {
 .footer {
   border-bottom: 8px solid #0099cc;
   font-size: 0.8em;
-  width: 100%;
-  position: fixed;
+  width: 124em;
+  position: relative;
   bottom: 0;
   left: 0;
+  margin-top: 1em;
 }
 @media (max-width: 600px) {
   .athlete-info {
@@ -105,5 +110,10 @@ th.school-name {
   }
   .data {
     width: 100%;
+  }
+  .footer {
+   position: static;
+   margin-top: 2em;
+   padding: 1em;
   }
 }

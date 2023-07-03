@@ -57,5 +57,6 @@ td {
   font-size: 14px;
   font-family: Arial, sans-serif;
   text-align: center;
+  padding: 0.5em;
 }
 </style>
